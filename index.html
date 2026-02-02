@@ -108,7 +108,7 @@ footer{background:var(--black);padding:4rem 3rem 2rem;border-top:2px solid rgba(
 .whatsapp:focus-visible{box-shadow:0 6px 25px rgba(37,211,102,.6),0 0 0 4px var(--primary)}
 .whatsapp svg{width:30px;height:30px;display:block}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.back-top{position:fixed;bottom:30px;right:30px;width:55px;height:55px;background:linear-gradient(135deg,var(--primary),#E63946);border:none;color:#fff;font-size:1.5rem;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:998;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.back-top{position:fixed;bottom:30px;right:30px;width:55px;height:55px;background:linear-gradient(135deg,var(--primary),#E63946);border:none;color:#fff;font-size:1.5rem;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;z-index:998;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);animation:float 3s ease-in-out infinite}
 .back-top.visible{opacity:1;visibility:visible}
 .back-top:hover{transform:translateY(-8px)}
 .scroll-reveal{opacity:0;transform:translateY(40px);transition:.8s}
@@ -143,10 +143,10 @@ footer{background:var(--black);padding:4rem 3rem 2rem;border-top:2px solid rgba(
 .story-grid,.programs-grid,.footer-content{padding:0 1rem}
 .countdown-timer{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:280px;margin:1.5rem auto}
 .countdown-timer>div:not(.time-unit){display:none}
-.countdown-timer .time-unit:nth-child(1){grid-column:1;grid-row:1}
-.countdown-timer .time-unit:nth-child(3){grid-column:2;grid-row:1}
-.countdown-timer .time-unit:nth-child(5){grid-column:1;grid-row:2}
-.countdown-timer .time-unit:nth-child(7){grid-column:2;grid-row:2}
+.countdown-timer .time-unit:nth-child(1){grid-column:1;grid-row:2}
+.countdown-timer .time-unit:nth-child(3){grid-column:2;grid-row:2}
+.countdown-timer .time-unit:nth-child(5){grid-column:1;grid-row:1}
+.countdown-timer .time-unit:nth-child(7){grid-column:2;grid-row:1}
 .time-unit{min-width:0;width:100%;padding:1rem;text-align:center;box-sizing:border-box}
 .form-row{grid-template-columns:1fr}
 .contact-form,.testimonials-grid{max-width:100%;padding-left:1rem;padding-right:1rem}
@@ -191,13 +191,13 @@ footer{background:var(--black);padding:4rem 3rem 2rem;border-top:2px solid rgba(
 <h3 class="countdown-title"> מבצע השקה מיוחד! </h3>
 <p style="color:#fff;margin-bottom:1.5rem">הצטרף עכשיו וקבל שיעור ניסיון חינם + 30% הנחה</p>
 <div class="countdown-timer">
-<div class="time-unit"><span class="time-value" id="days">00</span><span class="time-label">ימים</span></div>
-<div style="font-size:2.5rem;color:#fff;font-weight:700">:</div>
-<div class="time-unit"><span class="time-value" id="hours">00</span><span class="time-label">שעות</span></div>
+<div class="time-unit"><span class="time-value" id="seconds">00</span><span class="time-label">שניות</span></div>
 <div style="font-size:2.5rem;color:#fff;font-weight:700">:</div>
 <div class="time-unit"><span class="time-value" id="minutes">00</span><span class="time-label">דקות</span></div>
 <div style="font-size:2.5rem;color:#fff;font-weight:700">:</div>
-<div class="time-unit"><span class="time-value" id="seconds">00</span><span class="time-label">שניות</span></div>
+<div class="time-unit"><span class="time-value" id="hours">00</span><span class="time-label">שעות</span></div>
+<div style="font-size:2.5rem;color:#fff;font-weight:700">:</div>
+<div class="time-unit"><span class="time-value" id="days">00</span><span class="time-label">ימים</span></div>
 </div>
 <a href="#contact" class="btn btn-primary">תפוס את המקום שלך!</a>
 </div>
